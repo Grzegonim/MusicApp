@@ -1,0 +1,14 @@
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    flex-direction: column;
+  }
+}
+

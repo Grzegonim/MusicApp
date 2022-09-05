@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  background-color: #000;
+  font-family: $font-text;
+}
+
+/*
+.sub-image {
+  width: 100%;
+  height: auto;
+  background-image: url('../images/subscribe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+} 
+
+.subscribe {
+  min-height: 600px;
+  color: $color-light;
+} 
+
+.sub-text {
+  font-family: $font-text;
+  color: $color-light;
+  font-size: 70px;
+  text-align: center;
+  
+  p {
+    margin: 0;
+    line-height: 0;
+  }
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.sub {
+  img {
+    width: 200px;
+  }
+} 
+
+.flex-container {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  background-image: url('../images/subscribe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-top: 70px;
+  justify-content: center;
+  position: relative;
+}
+
+.flex-item-1 {
+  font-size: 70px;
+  font-family: $font-text;
+  position: absolute;
+  line-height: 0;
+  top: -8px;
+}
+
+.flex-item-2 {
+  img {
+    height: 300px;
+  }
+}*/
+
+//player
+
+.green-audio-player .slider .gap-progress{
+  background-color: $color-main;
+
+  .pin {
+    background-color: $color-main;
+  }
+}
+
+.green-audio-player .volume .volume__button.open path {
+  fill: $color-main;
+}
+
+.player-describe {
+  color: $color-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: $font-text;
+  margin: 0 10px;
+}

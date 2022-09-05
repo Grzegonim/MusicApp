@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="container">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>TASTE</h1>
+        <h2>ENGAGE</h2>
+        <h2>IN</h2>
+        <h2>ART</h2>
+      </div>
+    </div>
+  </header>
+  <section class="navi">
+  <div class="nav-btn">
+    <a href="#home">HOME</a>
+    <a href="#search">SEARCH</a>
+    <a href="#discovery">DISCOVERY</a>
+  </div>
+  </section>
+  <div id="pages">
+    <div id="home">
+      <div class="home-wrapper">
+      </div>
+    </div>
+    <div id="search">
+        <div class="form-container">
+        <h2>Name</h2>
+        <form>
+          <input type="text" class="search-input">
+          <button type="submit" class="btn btn-search">Search</button>
+        </form>
+        </div>
+      <div class="search-wrapper">
+      </div>
+    </div>
+    <div id="discovery" class="discovery-wrapper">
+    </div>
+  </div>
+  <div class="container container-bs">
+    <div class="row sb-text">
+      <div class="col sn-text">Subscribe <span>Now</span></div>
+    </div>
+    <div class="row row-img">
+      <div class="col-4 join"><button class="btn" id="btn" type="submit">Join Now</button></div>
+      <div class="col-8 col-image">
+        <div class="row img-container">
+          <div class="col-4 text-img">
+            <p class="name">Dean</p>
+            <p class="surename">Hen<span>son</span></p>
+          </div>
+            <div class="col-8 artist-ct">
+            <img src="./images/artist.jpg" alt="imgag">
+          </div>
+          <div class="row row-text">
+            <div class="col text">
+              <h3>NEW ALBUM</h3>
+              <p>Avaible only for subscribers</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <p>All rights reserved</p>
+  </footer>
+  <script id="template-home" type="text/x-handlebars-template">
+    <section class="home-container">
+      <h2>{{ author }} - {{ title }}</h2>
+      <div class="player-homepage">
+        <audio>
+            <source src="./songs/{{ filename }}" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="player-describe">
+        <p>Categories: {{ categories }}</p><p>#{{ ranking }} in the rankings</p>
+      </div>
+    </section>
+  </script>
+  <script id="template-search" type="text/x-handlebars-template">
+    <section class="search-container">
+      <h2>{{ author }} - {{ title }}</h2>
+      <div class="player-search">
+        <audio>
+            <source src="./songs/{{ filename }}" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="player-describe">
+        <p>Categories: {{ categories }}</p><p>#{{ ranking }} in the rankings</p>
+      </div>
+    </section>
+
+  </script>
+  <script id="template-discovery" type="text/x-handlebars-template">
+    <section class="discovery-container">
+    <h2>{{ author }} - {{ title }}</h2>
+    <div class="player">
+      <audio>
+          <source src="./songs/{{ filename }}" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="player-describe">
+      <p>Categories: {{ categories }}</p><p>#{{ ranking }} in the rankings</p>
+    </div>
+    </section>
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>

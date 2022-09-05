@@ -1,0 +1,36 @@
+.form-container {
+  font-family: $font-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-right: 10px;
+    color: $color-grey;
+  }
+  
+  input {
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    height: 30px;
+    width: 220px;
+  }
+  
+  button {
+    width: 80px;
+    height: 30px;
+  }
+}
+  
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+.search-container {
+  display: flex;
+  flex-direction: column;
+}

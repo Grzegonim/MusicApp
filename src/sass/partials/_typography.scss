@@ -1,0 +1,29 @@
+h1, h2 {
+  color: $color-light;
+}
+
+.nav-btn {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    font-family: $font-text;
+    color: $color-grey;
+
+    &:hover {
+      color: $color-light;
+    }
+
+    &.active {
+      color: $color-light;
+    }
+  }
+}
+
+.btn {
+  color: $color-light;
+  background-color: $color-main;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
